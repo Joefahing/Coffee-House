@@ -1,0 +1,110 @@
+/* Global Styles */
+
+* {
+    --brand-color: hsla(17, 36%, 49%, 1);
+    --brand-color-light: hsla(26, 34%, 72%, 1);
+    --cta-color: #eece88;
+    --link:#1755b7;
+    --white: #fff;
+    --black: #191919;
+    --grayscale300: #e3e3e3;
+    --grayscale400: #d2d2d2;
+    --grayscale600: #a3a3a3;
+    --grayscale800: #6d6d6d;
+
+
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    height: 100%;
+    margin: 0 auto; 
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Nunito', 'Monaco';
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--black);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: calc(64px / 1.5);
+    line-height: 1.25;
+    }
+
+h2 {
+    font-size: calc(64px / 1.5);
+}
+
+h3 {    
+    font-size: calc(45px / 1.5);
+}
+
+h4 {
+    font-size: calc(23px / 1.5);
+}
+
+a, p, button{
+    letter-spacing: 0.5px;
+}
+    
+@media(min-width: 720px) {
+    h1 {
+        font-size: calc(64px / 1.25);
+    }
+
+    h2 {
+        font-size: calc(45px / 1.25);
+    }
+
+    h3 {
+        font-size: calc(32px / 1.25);
+    }
+
+    h4 {
+        font-size: calc(23px / 1.25);
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 23px;
+    }
+}
+
+/* Common Style */
+
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 0.75rem 1rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 1250px;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+}
