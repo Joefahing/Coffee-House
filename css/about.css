@@ -1,5 +1,110 @@
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: var(--brand-color);
+/* About Page Style */
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../assets/images/coffee_background.png);
+    background-size: 25rem;
+    background-position: 80% 80%;
+    background-repeat: no-repeat;
 }
+
+
+.header-container{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    padding: 1rem 5rem;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+}
+
+nav .coffee-house-nav{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+}
+
+.nav-logo img{
+    height: 4rem;
+}
+
+.nav-name{
+    margin-left: 1rem;
+}
+
+.nav-name h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item:not(:first-child){
+    margin-left: 1rem;
+}
+
+.nav-item a {
+    color: var(--grayscale800);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-item:hover a, 
+.nav-item:active a{
+    color: var(--brand-color);
+}
+
+.nav-selected::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--brand-color);
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+}
+
+#nav-about{
+    margin-left: auto;
+}
+
+.hero{
+    position: relative;
+    top: 20%;
+}
+
+.hero p{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+}
+
+.header-container .fas{
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    color: var(--brand-color);
+}
+
+.header-container .fas:hover{
+    color: var(--grayscale800);
+}
+
+
+main img{
+    width: 100px
+}
+
+
+
+
