@@ -3,9 +3,10 @@
 * {
     --brand-color: hsla(17, 36%, 49%, 1);
     --brand-color-light: hsla(26, 34%, 72%, 1);
+    --brand-color-dark: hsla(8, 50%, 46%, 1);
     --cta-color: #eece88;
     --link:#1755b7;
-    --white: #fff;
+    --white: #F9F9F9;
     --black: #191919;
     --grayscale300: #e3e3e3;
     --grayscale400: #d2d2d2;
@@ -25,6 +26,7 @@ html{
 body{
     margin: 0 auto;
     font-family: 'Nunito', 'Monaco', sans-serif;
+    background-color: white;
 }
 
 /* Typography */
@@ -56,6 +58,10 @@ h4 {
 
 a, p, button{
     letter-spacing: 0.5px;
+}
+
+a{
+    text-decoration: none;
 }
     
 @media(min-width: 720px) {
@@ -105,6 +111,7 @@ ul{
 button{
     padding: 0.75rem 1rem;
 }
+
 
 .container{
     width: 100%;
