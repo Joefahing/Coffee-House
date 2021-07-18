@@ -228,9 +228,20 @@ main img{
         padding: 1rem;
     }
 
-
-    .landing .fas{
+    .header-container .fas{
         bottom: 2rem;
+    }
+}
+
+@media screen and (max-height: 750px){
+    .landing{
+        background: none;
+    }
+}
+
+@media screen and (max-height: 400px){
+    .header-container .fas{
+        display: none;
     }
 }
 
