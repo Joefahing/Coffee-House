@@ -45,9 +45,8 @@ main{
 }
 
 #about{
-ol}
-
-
+    margin-top: 6rem;
+}
 
 .about-container{
     display: flex;
