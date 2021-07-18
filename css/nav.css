@@ -12,6 +12,7 @@ header{
     background-size: 25rem;
     background-position: 80% 90%;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .header-container{
@@ -165,10 +166,11 @@ main img{
     }
 
     .header-container.active{
-        background-color: rgba(0,0, 0, 0.95);
+        background-color: rgba(0,0, 0, 1);
         position: fixed;
         height: 100vh;
         z-index: 1000;
+        top:0
     }
 
     .header-container.active .coffee-house-nav{
@@ -204,13 +206,31 @@ main img{
 
     .landing{
         background-position: 50% 80%;
-
     }
 }
 
 @media screen and (max-width: 750px) {
     .landing{
         background: none;
+    }
+
+    .hero p{
+        text-align: center;
+    }
+    
+    .nav-name{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-container{
+        padding: 1rem;
+    }
+
+
+    .landing .fas{
+        bottom: 2rem;
     }
 }
 
