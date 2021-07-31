@@ -1,12 +1,3 @@
-/*
-Task
-
-Add "active" class to header-container when nav-menu is clicked
-Remove "active" class when header is clicked
-*/
-
-
-
 const bodyElement = document.body;
 const headerContainer = document.querySelector(".header-container");
 const menuElement = document.querySelector('.nav-menu');
