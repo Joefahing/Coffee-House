@@ -28,6 +28,7 @@ nav{
     height: 100px;
     position: fixed;
     z-index: 100;
+    transition: background-color 0.5s ease-in
 }
 
 nav .coffee-house-nav{
@@ -98,7 +99,9 @@ nav .coffee-house-nav{
     height: 3px;
     background-color: var(--brand-color-dark);
     border-radius: 5px;
-    transition: background-color 0.5s ease-in; 
+    transition: background-color 0.5s ease-in, 
+                transform 0.5s ease-in; 
+
 }
 
 .stroke{
@@ -114,7 +117,6 @@ nav .coffee-house-nav{
 .stroke::before {
     transform: translateY(-0.5rem);
 }
-
 
 .hero{
     position: relative;
@@ -136,10 +138,12 @@ nav .coffee-house-nav{
 }
 
 .header-container .fas:hover{
-    color: var(--grayscale800);
+    /* color: var(--grayscale800); */
+    animation-name: hover_down;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-
-
 
 main img{
     width: 100px
@@ -191,13 +195,14 @@ main img{
 
     .header-container.active .nav-menu .stroke{
         background-color: rgba(0,0, 0, 0.95);
+        transition: none;
     }
 
     .header-container.active .nav-menu .stroke::before{
         transform: rotate(45deg);
         background-color: var(--brand-color-light);
     }
-
+    
     .header-container.active .nav-menu .stroke::after{
         transform: rotate(-45deg);
         background-color: var(--brand-color-light);
@@ -244,4 +249,8 @@ main img{
     }
 }
 
-
+@keyframes hover_down{
+    from {transform: translateY(0);}
+    50% {transform: translateY(1.5rem);}
+    to {transform: translateY(0);}
+}
