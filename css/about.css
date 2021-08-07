@@ -45,6 +45,13 @@ main{
     color: var(--brand-color-dark);
 }
 
+
+.service-item h4:hover{
+    transition:all 0.5s ease-in-out;
+    color: var(--brand-color-light);
+}
+
+
 .service-item p{
     text-align: center;
 }
@@ -57,7 +64,6 @@ main{
     display: flex;
     column-gap: 2rem;
 }
-
 
 .reverse{
     flex-direction: row-reverse;
