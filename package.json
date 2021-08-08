@@ -1,0 +1,19 @@
+{
+  "name": "project-coffe-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joefahing/Coffee-House.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joefahing/Coffee-House/issues"
+  },
+  "homepage": "https://github.com/Joefahing/Coffee-House#readme"
+}
