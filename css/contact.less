@@ -1,4 +1,7 @@
 @navbar-height: 6.25rem;
+@item-gap: 2rem;
+@small-item-gap: 1rem;
+@input-height: 2.5rem;
 
 body {
     height: 100%;
@@ -11,11 +14,51 @@ main{
     margin-top: @navbar-height;
     flex-grow: 1;
 
+    
+    .section-title{
+        font-weight: 200;
+        position: relative;
+        padding-left: 6rem;
+    }
+
     form{
         display: flex;
         justify-content: center;
+        margin-top: @item-gap;
+        max-width: 28rem;
+        margin: @item-gap auto;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: @item-gap;
+            width: 100%;
+
+            li{
+                position: relative;
+                
+                input {
+                    width: 100%;
+                    height: @input-height;
+                    border-radius: 3px;
+                    border: 1px solid var(--grayscale800);
+                    
+                    &:focus{
+                        outline-color: var(--brand-color-dark);                        
+                    }
+                }
+
+                textarea{
+                    width: 100%;
+                }
+
+                label{
+                    position: absolute;
+                    left: 0.5rem;
+                }
+            }
+        }
     }
-    
 }
 
 footer{
