@@ -1,6 +1,89 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 main {
-  height: 600px;
   position: relative;
-  top: 100px;
-
+  margin-top: 6.25rem;
+  flex-grow: 1;
+}
+main form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+main form .section-title {
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 1rem;
+}
+main form ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+}
+main form ul li {
+  position: relative;
+}
+main form ul li input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 3px;
+  border: 2px solid var(--brand-color-dark);
+  padding: 0 1rem;
+  background-color: white;
+}
+main form ul li input:focus {
+  outline-color: var(--brand-color-light);
+}
+main form ul li input:valid {
+  background-color: white;
+}
+main form ul li label {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  letter-spacing: 1px;
+}
+main form ul li .input-item:focus ~ label,
+main form ul li .input-item:not(:placeholder-shown) ~ label {
+  font-size: 0.75rem;
+  top: -0.5rem;
+  background: white;
+}
+main form ul li textarea {
+  width: 100%;
+  height: 10rem;
+  border-radius: 3px;
+  border: 2px solid var(--brand-color-dark);
+  padding: 1rem;
+  resize: none;
+}
+main form ul li textarea:focus {
+  outline-color: var(--brand-color-light);
+}
+main form ul li textarea:valid {
+  background-color: white;
+}
+main form ul li textarea:focus ~ label,
+main form ul li textarea:not(:placeholder-shown) ~ label {
+  font-size: 0.75rem;
+  top: -0.5rem;
+  background: white;
+}
+main form ul li button {
+  width: 100%;
+  max-width: 13rem;
+  background-color: var(--brand-color);
+  color: var(--white);
+  border: 1px solid var(--brand-color-dark);
+  border-radius: 3px;
+}
+footer {
+  margin-top: auto;
 }
