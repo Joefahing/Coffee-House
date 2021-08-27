@@ -16,7 +16,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/180c1d2fdd.js" crossorigin="anonymous"></script>
     <script src="../less.js" type="text/javascript"></script>
-    <script src='../knockout-3.5.1.js' type='text/javascript'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js" type='text/javascript'></script>
     <title>☕️ Project Coffee House</title>
 </head>
 
@@ -99,17 +99,7 @@
     </footer>
     <script src="../script/nav.js"></script>
     <script src="../script/validation.js"></script>
-    <!-- <script type="module" src="../script/test.js"></script> -->
-    <script>
-        const vm = {
-            message: 'hello world from vm'
-        }
-
-        ko.applyBindings(vm, document.querySelector('#contact_page_vm'));
-
-    </script>
-
-
+    <script src="../view_models/contact_vm.js"></script>
 </body>
 
 </html>
