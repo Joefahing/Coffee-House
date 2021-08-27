@@ -23,23 +23,12 @@ form.addEventListener('submit', (event) => {
         alert('All input is valid');
     } else {
 
-        //the 3 state I need is valueMissing, tooShort, tooLong
         if (!email.validity.valid) {
-            let errorMessage = ''
-
-            if (email.value.length === '') {
-                errorMessage = createErrorMessage('email', 'valueMissing');
-            }
-            else {
-                errorMessage = createErrorMessage('email');
-            }
-
-            emailError.textContent = errorMessage;
+            emailError.textContent = createErrorMessage('email');
             email.style.borderColor = 'red';
         }
 
         if (!subject.validity.valid) {
-
             subjectError.textContent = createErrorMessage('subject');
             subject.style.borderColor = 'red';
         }
@@ -62,7 +51,7 @@ form.addEventListener('submit', (event) => {
 const createErrorMessage = (input = '', errorType = 'default') => {
     const cap = input[0].toUpperCase();
     const capInput = cap + input.substring(1, input.length);
-    const reason = '';
+    let reason = '';
 
     if (errorType === 'default') reason = 'is invalid';
     if (errorType === 'valueMissing') reason = 'is invalid due to missing value';
