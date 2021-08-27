@@ -1,7 +1,6 @@
 {
   "name": "project-coffe-house",
   "version": "1.0.0",
-  "description": "",
   "main": "asset.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,6 @@
   "homepage": "https://github.com/Joefahing/Coffee-House#readme",
   "dependencies": {
     "knockout": "^3.5.1"
-  }
+  },
+  "description": ""
 }
